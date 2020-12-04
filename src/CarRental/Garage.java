@@ -10,11 +10,16 @@ package CarRental;
  * @author EMMANUEL
  */
 public class Garage {
-    Vehicle vehicle;
-    void setVehicle(Vehicle parked){
-        
+    String vehicle="parked";
+    Garage(String vehicle){
+        this.vehicle=vehicle;
     }
-    String tostring(){
-     return "This vehicle is "+vehicle;
+    String setVehicle(){
+       return vehicle;
     }
+   public String tostring(){
+     return "This vehicle is "+setVehicle();
+    }
+    
+   
 }

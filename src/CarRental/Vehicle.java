@@ -10,16 +10,15 @@ package CarRental;
  * @author EMMANUEL
  */
 public class Vehicle {
-     String color;
-    Vehicle(String color){
-        this.color=color;
-    }
-
+     String color="red";
+    
     String getcolor(){
         
         return color;
     }
-    String tostring(){
+   String tostring(){
         return "This Vehicle is "+getcolor();
     } 
+   
+    
 }

@@ -10,7 +10,16 @@ package CarRental;
  * @author EMMANUEL
  */
 public class GarageTester {
-     void getExample(){
-       Truck a= new Truck("black",false);
+      String getExample(){
+       Truck truck= new Truck("black",false);
+       Garage garage=new Garage("parked");
+       return "this car is"+truck.toString()+garage.toString();
+        
     }
+      
+     
+      
+     
+     
+     
 }

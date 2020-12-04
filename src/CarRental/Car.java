@@ -11,11 +11,8 @@ package CarRental;
  */
 public class Car extends Vehicle{
     boolean tires=false;
-   Car(String color,boolean tires){
-       super(color);
-    this.tires=tires;
-}
-String tostring(){
+   
+  String tostring(){
      return "This vehicle is "+getcolor()+", has WinterTires: "+tires;
 }
 }

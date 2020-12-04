@@ -9,11 +9,17 @@ package CarRental;
  *
  * @author EMMANUEL
  */
-public class CarRentalContract {
-   Customer customername;
-    Vehicle vehicledescrition;
-    
-    String tostring(){
-     return "This vehicle is the car "+ customername+ "description"+ vehicledescrition;
+public class CarRentalContract extends Car {
+   Customer Customer=new Customer();
+   boolean tires;
+   
+   
+   CarRentalContract (boolean tires) {
+       this.tires=tires;
+      
+      
+   }
+    public String tostring(){
+     return "This vehicle is the car "+ Customer.name+":"+ toString() ;
     } 
 }

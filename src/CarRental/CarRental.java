@@ -9,7 +9,7 @@ package CarRental;
  *
  * @author EMMANUEL
  */
-public class CarRental {
+/*public class CarRental {
     int [] CarRentalContracts;
     void addContract(CarRentalContract c1){
     }
@@ -20,3 +20,4 @@ public class CarRental {
         return "This Vehicle is "+CarRentalContracts[0];
     } 
 }
+*/
