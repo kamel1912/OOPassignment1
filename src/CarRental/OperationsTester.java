@@ -12,14 +12,37 @@ package CarRental;
 public class OperationsTester {
     
     public static void main (String [] args){
-        Truck truck= new Truck("black",false);
-       Garage garage=new Garage("parked");
-        
-        CarRentalContract contracttest=new CarRentalContract(true);
+       Vehicle bencar = new Car("Green",true);
+        Vehicle petetruck = new Truck("Orange",true);
         
         
-        System.out.println(truck.toString()+garage.toString());
-        System.out.println(contracttest.toString());
+        System.out.println(bencar.toString());
+        System.out.println(petetruck.toString());
+        
+        
+        GarageTester gt = new GarageTester();
+        System.out.println("Garage Tester: "+gt.getExample());
+        
+        Customer a = new Customer("kmael","Goma");
+        Customer b = new Customer("zirack","France");
+        
+        Vehicle ford = new Car("Purple",true);
+        
+        //CarRentalContract cc1 = new CarRentalContract(nc1,bencar);
+        CarRentalContract cc2 = new CarRentalContract(b,ford);
+        
+        CarRental cr = new CarRental();
+        cr.addContract(cc2);
+        //cr.addContract(cc2);
+        
+//        for (int i=1; i<=CarRental.rentObjects; i++){
+//            System.out.println(cr.displayContracts());
+//        }
+
+        System.out.println("My Contracts:");
+        System.out.println(cr.displayContracts());
+        
+    
     }
     
 }

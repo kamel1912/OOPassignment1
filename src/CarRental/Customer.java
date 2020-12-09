@@ -10,8 +10,14 @@ package CarRental;
  * @author EMMANUEL
  */
 public class Customer {
-    String name="emma";
+    String name;
     String address;
+    
+    Customer(String name, String address){
+        this.name = name;
+        this.address = address;
+    }
+    
    
     
 }

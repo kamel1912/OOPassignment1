@@ -10,16 +10,16 @@ package CarRental;
  * @author EMMANUEL
  */
 public class Garage {
-    String vehicle="parked";
-    Garage(String vehicle){
-        this.vehicle=vehicle;
+    Vehicle n = new Car("yellow",true);
+    Vehicle t = new Truck("orange",true);
+
+
+    public String setVehicle(Vehicle parked){
+       return parked.toString();
+                
     }
-    String setVehicle(){
-       return vehicle;
+    public String toString(){  
+       return "Description of the parked vehicle "+t.toString()+n.toString();  
     }
-   public String tostring(){
-     return "This vehicle is "+setVehicle();
-    }
-    
    
 }

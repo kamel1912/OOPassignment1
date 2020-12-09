@@ -10,18 +10,16 @@ package CarRental;
  * @author EMMANUEL
  */
 public class Truck extends Vehicle{
-     boolean hastrailer=false;
-     
-     
-    Truck(String color,boolean istrailer){
-         this.color=color;
-        
-        this.hastrailer=istrailer;
-       
+     boolean hasTrailer = false;
+    
+    Truck(String TruckColor,boolean hasTrail){
+        this.color = TruckColor;
+        hasTrailer = hasTrail;
     }
-    String tostring(){
+    
+    public String toString(){
         
-         return "This Vehicle is "+getcolor()+", has Trailer: "+hastrailer;
+        return "The Vehicle is:"+getColor(color)+" has Trailer: "+hasTrailer;
     }
     
     

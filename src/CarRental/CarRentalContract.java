@@ -9,17 +9,24 @@ package CarRental;
  *
  * @author EMMANUEL
  */
-public class CarRentalContract extends Car {
-   Customer Customer=new Customer();
-   boolean tires;
-   
-   
-   CarRentalContract (boolean tires) {
-       this.tires=tires;
-      
-      
-   }
-    public String tostring(){
-     return "This vehicle is the car "+ Customer.name+":"+ toString() ;
-    } 
+public class CarRentalContract {
+    Customer c; 
+    Vehicle v; 
+    
+    CarRentalContract(Customer custo , Vehicle vim)
+    {
+        this.c = custo;
+        this.v = vim;
+    }
+    
+    
+    static int carObjects = 0; 
+    { 
+        carObjects += 1; 
+    }
+    public String toString(){
+        
+        return c.name+" : "+v.toString();
+    }
+    
 }

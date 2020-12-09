@@ -10,9 +10,16 @@ package CarRental;
  * @author EMMANUEL
  */
 public class Car extends Vehicle{
-    boolean tires=false;
-   
-  String tostring(){
-     return "This vehicle is "+getcolor()+", has WinterTires: "+tires;
-}
+     boolean hasWinterTires = false;
+    
+    Car(String carcolor,boolean hasWint){
+        
+        this.color = carcolor;
+        hasWinterTires = hasWint;
+    }
+    
+    public String toString(){
+        
+        return "The Vehicle is:"+getColor(color)+" Has Winter Tires "+hasWinterTires;
+    }
 }
